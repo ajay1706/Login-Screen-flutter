@@ -91,11 +91,13 @@ backgroundColor: Colors.black,
           child: Icon(Icons.ac_unit,
         ),
         backgroundColor: Colors.black,
+        label: "First Item",
           onTap: () {debugPrint("First");}
         ),
           SpeedDialChild(  
           child: Icon(Icons.accessibility_new),
                   backgroundColor: Colors.black,
+                  label: "Second Item",
 
           onTap: () {debugPrint("Second");}
         ),
