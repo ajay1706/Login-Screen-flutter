@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:login_screen/common/app_card.dart';
-import 'package:login_screen/blocs/theme.dart';
-import 'package:provider/provider.dart';
 
 
 class LoginPage extends StatefulWidget {
@@ -83,7 +82,25 @@ class _LoginPageState extends State<LoginPage> {
           ],
         ),
       ) ,
-    
+    floatingActionButton: SpeedDial(
+      
+animatedIcon: AnimatedIcons.menu_close,
+backgroundColor: Colors.black,
+      children: [
+        SpeedDialChild(
+          child: Icon(Icons.ac_unit,
+        ),
+        backgroundColor: Colors.black,
+          onTap: () {debugPrint("First");}
+        ),
+          SpeedDialChild(  
+          child: Icon(Icons.accessibility_new),
+                  backgroundColor: Colors.black,
+
+          onTap: () {debugPrint("Second");}
+        ),
+      ],
+    ),
       );
   }
 }
