@@ -25,8 +25,9 @@ class _AppCardState extends State<AppCard> {
       children: <Widget>[
         new Card(
           margin: EdgeInsets.all(20),
-          color: Colors.white,
+          color: Colors.black,
           child: new Container(
+            
             padding: EdgeInsets.all(20),
             child: widget.child,
             decoration: BoxDecoration(

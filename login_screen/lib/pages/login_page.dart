@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:login_screen/common/app_card.dart';
+import 'package:login_screen/blocs/theme.dart';
+import 'package:provider/provider.dart';
 
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+
 
 
       body:Container( 
@@ -27,8 +36,10 @@ class LoginPage extends StatelessWidget {
               child:Container( 
                 child: Column(children: <Widget>[
                   TextFormField( 
+                    
                     decoration: InputDecoration(  
-                      labelText: "Email"
+                      labelText: "Email",
+                      
                     ),
                   ),
                      TextFormField( 
@@ -72,7 +83,7 @@ class LoginPage extends StatelessWidget {
           ],
         ),
       ) ,
-      
-    );
+    
+      );
   }
 }
